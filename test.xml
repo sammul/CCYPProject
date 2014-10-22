@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>leo li</Author>
+  <LastAuthor>Wu Xia</LastAuthor>
+  <Created>2014-10-10T22:40:35Z</Created>
+  <LastSaved>2014-10-10T22:40:52Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <Worksheet ss:Name="ccyplisting">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="19222" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="337.20000000000005"/>
+   <Row>
+    <Cell><Data ss:Type="String">LISTID</Data></Cell>
+    <Cell><Data ss:Type="String">CN</Data></Cell>
+    <Cell><Data ss:Type="String">EN</Data></Cell>
+    <Cell><Data ss:Type="String">AD_KEYWORD</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">ACETEK屋頂工程公司</Data></Cell>
+    <Cell><Data ss:Type="String">ACETEK ROOFING CO.</Data></Cell>
+    <Cell><Data ss:Type="String">公寓 住屋 商業 工廠 木板 醉石 陶瓷 瀝青 防水 金屬 平頂</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>
