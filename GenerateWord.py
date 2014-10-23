@@ -5,12 +5,16 @@ Created on Oct 18, 2014
 @author: Wu Xia
 '''
 import re
+import sys
 from xml.dom import minidom
 
 
 def main():
+    reload(sys)  
+    sys.setdefaultencoding('utf8') 
+    
     dic = {}
-    dicfile = open('dictionary.txt','r')
+    dicfile = open(sys.argv[1],'r')
     for line in dicfile:
         line = replace(line.encode('utf-8'))
         words = line.split(';')
@@ -24,9 +28,9 @@ def main():
             dic[wkey][1].append(ps[i])
     
     
-    xmldoc = minidom.parse('ccyplisting.xml')
+    xmldoc = minidom.parse(sys.argv[2])
     cells = xmldoc.getElementsByTagName('Data')
-    out = open('WordsZhuPin.txt','w')
+    out = open(sys.argv[3],'w')
     fres = {}
     
     for cell in cells:

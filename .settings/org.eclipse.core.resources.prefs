@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
 encoding/GenerateWord.py=utf-8
 encoding/Prework.py=utf-8
+encoding/generateDictonary.py=utf-8
+encoding/tokenize.py=UTF-8

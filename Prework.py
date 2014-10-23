@@ -5,12 +5,16 @@ Created on Oct 17, 2014
 @author: Wu Xia
 '''
 import re
+import sys
 
 def main():
-    origin = open('BoPoMoFo.txt','r')
+    reload(sys)  
+    sys.setdefaultencoding('utf8') 
+    
+    origin = open(sys.argv[1],'r')
     #origin.readline(); #first line is not data
     dict = {}
-    out = open('dictionary.txt','w')
+    out = open(sys.argv[2],'w')
     tune = ['','ˊ','ˇ','ˋ','·']
     for line in origin:
         line = line.encode('utf-8')
