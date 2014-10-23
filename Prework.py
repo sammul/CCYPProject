@@ -11,10 +11,12 @@ def main():
     #origin.readline(); #first line is not data
     dict = {}
     out = open('dictionary.txt','w')
+    tune = ['','ˊ','ˇ','ˋ','·']
     for line in origin:
         line = line.encode('utf-8')
         words = line.split(',') #1 zhuyin 2 pinyin 4 character
         zhuyin = replace(words[1])
+        zhuyin += tune[int(words[3])-1]
         pinyin = replace(words[2])
         characters = replace(unicode(replace(words[4]),'utf-8'))
         for c in characters:
